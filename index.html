@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game DEV</title>
+</head>
+<style>
+    body{
+        background-color: cadetblue;
+    }
+
+    form{
+        border: 5px dotted;
+    }
+   
+</style>
+<body>
+    <h1>Cadastro para GAME DEV</h1>
+
+    <form>
+
+        <!-- Nome -->
+        <label for="nome">Qual seu nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Escreva seu nome aqui" required>
+
+        <!-- Nome -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Escreva seu email aqui" required>
+
+        <!-- Nascimento -->
+        <label for="date">Data de nascimento:  </label>
+        <input type="date" name="date" id="date" required min="1970-01-01" max="2010-06-30">
+
+        <!-- Onde mora -->
+        <label for="cidade">Cidade:  </label>
+        <select name="cidade" id="cidade" required>
+            <option>Selecione sua cidade</option>
+            <option>Londrina</option>
+            <option>Curitiba</option>
+            <option>Maringá</option>
+            <option>Santa Catarina</option>
+            <option>Sorocaba</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Bombinhas</option>
+            <option>Cambé</option>
+            <option>Florianópolis</option>
+            <option>Gringo</option>
+            
+        </select>
+
+         <!-- Profissional -->
+         <label for="historico">Já teve experiência com programação de jogos?</label>
+         <input type="radio" name="historico" required>
+         Sim
+
+         <input type="radio" name="historico" required>
+         Não
+
+         <!-- Profissional -->
+         <label for="historico">Tem faculdade/diploma/cursos?</label>
+         <input type="radio" name="historico" required>
+         Sim
+
+         <input type="radio" name="historico" required>
+         Não
+
+         <!-- Perfil -->
+        <label>
+            Coloque suas softs skills e hards skills, e suas experiências de trabalho!
+        </label>
+
+        <textarea rows="10"></textarea>
+
+          <!-- Aceitar termos -->
+          <label>
+            <input type="checkbox" id="options" required>
+            Aceito os termos!
+        </label>
+
+        
+        <!-- Currículo -->
+        <button type="submit">
+            Enviar currículo!
+        </button>
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
